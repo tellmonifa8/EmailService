@@ -1,0 +1,67 @@
+---
+title: "Verify your Email Address"
+preheader: "Verify your Email Address"
+bodyClass: bg-[#ecf0f5]
+---
+
+<x-main>
+  <div class="bg-[#ecf0f5] sm:px-4 font-sans">
+    <table align="center">
+      <tr>
+        <td class="w-[552px] max-w-full">
+          <div class="mt-12 mb-6 sm:my-8 text-center">
+            <img
+              src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDEiIGhlaWdodD0iNDEiIHZpZXdCb3g9IjAgMCA0MSA0MSIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHJlY3QgeT0iMC4wNTkwMjEiIHdpZHRoPSI0MC40NjUzIiBoZWlnaHQ9IjQwLjQ2NTMiIHJ4PSI4LjA5MzA3IiBmaWxsPSJ3aGl0ZSIvPgo8cGF0aCBkPSJNMjcuNTQyNCAyNS4xNjIzQzI1LjkzNTggMjYuMzc2NyAyMy42MzA3IDI3LjAzNTkgMjEuNTM1MiAyNy4wMzU5QzE3LjcyODMgMjcuMDM1OSAxNS41MjggMjQuNjc2NSAxNS41MjggMTkuOTkyNFYxNS40ODE4TDEzLjUwMjMgMTUuMzc3N0MxMi43MzQgMTUuMzQzIDEyLjUyNDQgMTQuOTYxNCAxMi41MjQ0IDE0LjMwMjFWMTEuNTI2NEMxMi41MjQ0IDEwLjg2NzEgMTMuMDEzNCAxMC4zMTIgMTMuNzExOSAxMC4zNDY3TDE1LjUyOCAxMC40NTA4VjYuNDk1MzFDMTUuNTI4IDUuODAxMzggMTUuODc3MyA1LjQ1NDQxIDE2LjU3NTggNS40NTQ0MUgxOS4zNjk4QzIwLjA2ODMgNS40NTQ0MSAyMC40MTc2IDUuODAxMzggMjAuNDE3NiA2LjQ5NTMxVjEwLjcyODNMMjUuNDQ2OCAxMS4wNDA2QzI2LjIxNTIgMTEuMDc1MyAyNi40MjQ4IDExLjQ1NyAyNi40MjQ4IDEyLjExNjJWMTQuODkyQzI2LjQyNDggMTUuNTUxMiAyNS45MzU4IDE2LjEwNjQgMjUuMjM3MyAxNi4wNzE3TDIwLjQxNzYgMTUuNzk0MVYxOS4xMjVDMjAuNDE3NiAyMS4zNDU2IDIxLjMyNTYgMjIuMDc0MyAyMi43OTI1IDIyLjA3NDNDMjMuNzAwNiAyMi4wNzQzIDI0LjcxMzQgMjEuNTUzOCAyNS40ODE4IDIxLjA2OEMyNi4wMDU3IDIwLjc1NTggMjYuNDk0NiAyMS4wMzMzIDI2Ljc3NCAyMS42OTI2TDI3LjY4MjEgMjMuNzA1QzI3Ljk2MTUgMjQuMjk0OSAyOC4xMzYxIDI0Ljc0NTkgMjcuNTQyNCAyNS4xNjIzWiIgZmlsbD0iIzU0MkM4NSIvPgo8cGF0aCBkPSJNMzEuMDIyOSAyNy43MjRDMjcuOTE4OSAzMC43MTcxIDI0Ljk1MzEgMzIuNDMxMyAyMC4yMzIyIDMyLjQzMTNDMTUuNzk5NSAzMi40MzEzIDEyLjI2MDMgMzAuNDQyMiA5LjQ0MTQxIDI3LjcyNCIgc3Ryb2tlPSIjNTQyQzg1IiBzdHJva2Utd2lkdGg9IjQuMDQ2NTMiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIvPgo8L3N2Zz4K"
+              alt=""
+            />
+          </div>
+
+          <table class="w-full">
+            <tr>
+              <td
+                class="p-12 sm:px-6 text-base text-slate-700 bg-white rounded shadow-sm"
+              >
+                <h1
+                  class="m-0 mb-6 text-2xl text-center sm:leading-8 text-[#1E293B] font-bold"
+                >
+                  Verify your Email Address
+                </h1>
+
+                <p class="m-0 leading-5">
+                  Hello @{{ name }}
+                  <br />
+                  <br />
+                  Thank you for signing up with Tellmonifa! To ensure the
+                  security and validity of your account, please verify your
+                  email address by clicking the link below:
+                </p>
+
+                <a
+                  href="{{ link }}"
+                  class="block py-4 px-6 mt-5 text-center font-bold text-sm leading-none rounded [text-decoration:none] text-white bg-indigo-500 hover:bg-indigo-600"
+                >
+                  <span style="mso-text-raise: 13pt">Verify Account</span>
+                </a>
+
+                <p class="mt-8 text-xs">
+                  By verifying your email, you will gain full access to our
+                  services and receive important updates about your account. If
+                  you did not sign up for an account with us, please disregard
+                  this email.
+                </p>
+
+                <x-divider space-y="32px" class="bg-slate-200" />
+
+                <p class="m-0">Thanks, <br />The Tellmonifa Team</p>
+              </td>
+            </tr>
+
+            <tr role="separator">
+              <td class="leading-12">&zwj;</td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+  </div>
+</x-main>
