@@ -81,24 +81,6 @@ async function main() {
     res.send(html);
   });
 
-  app.post("/send/reset-email", async (req, res) => {
-    const body = req.body as IRequestResetData;
-    const html = await customizeEmail(
-      {
-        doctorName: body.doctorName,
-        otp1: body.code[0],
-        otp2: body.code[1],
-        otp3: body.code[2],
-        otp4: body.code[3],
-      },
-      "request-reset.html"
-    );
-
-    await sendEmail(html, body.email, "Password Reset");
-
-    res.send(`Successfully sent email to ${body.email}`);
-  });
-
   app.post("/send/verify", async (req, res) => {
     const body = req.body as IVerifyData;
     const html = await customizeEmail(body, "verify.html");
@@ -107,17 +89,10 @@ async function main() {
     res.send(`Successfully sent email to ${body.email}`);
   });
 
-  app.post("/send/report-ready", async (req, res) => {
-    const body = req.body as IShareReport;
-    const html = await customizeEmail(body, "report-ready.html");
-
-    await sendEmail(
-      html,
-      body.email,
-      "Your report is ready",
-      body.link,
-      `${body.name}.pdf`
-    );
+  app.post("/send/forgot-password", async (req, res) => {
+    const body = req.body as IVerifyData;
+    const html = await customizeEmail(body, "request-forgot-password.html");
+    await sendEmail(html, body.email, "Reset Password");
 
     res.send(`Successfully sent email to ${body.email}`);
   });
