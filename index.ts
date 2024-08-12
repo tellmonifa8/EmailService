@@ -97,7 +97,7 @@ async function main() {
     res.send(`Successfully sent email to ${body.email}`);
   });
 
-  app.listen(3000, () => console.log("http://localhost:3000"));
+  app.listen(8080, () => console.log("http://localhost:8080"));
 }
 
 main();
